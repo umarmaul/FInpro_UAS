@@ -119,7 +119,6 @@ void editDate(Node *head, int taskIndex) {
             printf("Enter new due date (DD MM YYYY): ");
             scanf("%d %d %d", &temp->day, &temp->month, &temp->year);
             printf("Date edited.\n");
-            
         return;
         
     }
