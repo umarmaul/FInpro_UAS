@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 typedef struct Node {
     char name[100];
@@ -120,23 +119,15 @@ void editDate(Node *head, int taskIndex) {
             printf("Enter new due date (DD MM YYYY): ");
             scanf("%d %d %d", &temp->day, &temp->month, &temp->year);
             printf("Date edited.\n");
+            
         return;
+        
     }
     temp = temp->next;
     index++;
 	}	
 
 	printf("Invalid name index.\n");
-}
-
-int getCount(Node *head) {
-	int count = 0;
-	Node *temp = head;
-	while (temp != NULL) {
-	count++;
-	temp = temp->next;
-	}
-	return count;
 }
 
 void freeList(Node *head) {
