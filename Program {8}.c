@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void printOpening{
+void printOpening(){
      int i;
      
      for(i = 0; i < 45; i++){
@@ -22,5 +22,7 @@ void printOpening{
 int main(){
     int i;
     
+    printOpening;
+
     return 0;
 }
